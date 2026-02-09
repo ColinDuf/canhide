@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No One Can Hide - VALORANT Discord Bot</title>
+  <meta name="description" content="No One Can Hide est un bot Discord qui utilise l'API officielle de Riot Games pour fournir des statistiques VALORANT directement sur votre serveur Discord.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="/" class="nav-brand">
+      <div class="logo-icon">&#128065;</div>
+      No One Can Hide
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Fonctionnalites</a></li>
+      <li><a href="#commands">Commandes</a></li>
+      <li><a href="#compliance">Conformite</a></li>
+      <li><a href="legal/index.html">Mentions legales</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">&#9889; Bot Discord VALORANT</div>
+      <h1>Suivez vos stats VALORANT <span>sans quitter Discord</span></h1>
+      <p>No One Can Hide utilise l'API officielle de Riot Games (RSO) pour offrir un suivi complet de vos performances VALORANT directement dans votre serveur Discord.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">Decouvrir les fonctionnalites</a>
+        <a href="#compliance" class="btn btn-outline">Conformite Riot Games</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">API Riot officielle</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">RSO</div>
+      <div class="stat-label">Authentification securisee</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">0</div>
+      <div class="stat-label">Donnees revendues</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">Disponibilite</div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features" class="container">
+    <div class="section-header">
+      <h2>Fonctionnalites principales</h2>
+      <p>Un ensemble d'outils concu pour ameliorer l'experience des joueurs VALORANT sur Discord.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#128200;</div>
+        <h3>Statistiques de match</h3>
+        <p>Consultez l'historique complet de vos parties : K/D/A, headshot %, score de combat, et bien plus, directement depuis Discord.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127942;</div>
+        <h3>Suivi de rang</h3>
+        <p>Visualisez votre rang actuel, votre progression en RR (Rating Ranking), et votre historique de classement sur la saison.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128101;</div>
+        <h3>Profils joueurs</h3>
+        <p>Affichez les profils complets des joueurs : agents les plus joues, cartes favorites, taux de victoire par mode de jeu.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128274;</div>
+        <h3>Authentification RSO</h3>
+        <p>Connexion securisee via Riot Sign-On (RSO). Les joueurs autorisent l'acces a leurs donnees de maniere transparente et revocable.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128203;</div>
+        <h3>Leaderboards serveur</h3>
+        <p>Creez des classements automatiques entre les membres de votre serveur Discord bases sur le rang, le KDA ou les victoires.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128683;</div>
+        <h3>Respect de la vie privee</h3>
+        <p>Les joueurs peuvent se desinscrire a tout moment avec /optout. Aucune donnee n'est partagee avec des tiers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMANDS -->
+  <section id="commands" class="container">
+    <div class="section-header">
+      <h2>Commandes disponibles</h2>
+      <p>Des commandes slash simples et intuitives pour acceder a toutes les fonctionnalites.</p>
+    </div>
+    <div class="commands-list">
+      <div class="command-item">
+        <span class="command-name">/link</span>
+        <span class="command-desc">Liez votre compte Riot Games via l'authentification RSO securisee.</span>
+      </div>
+      <div class="command-item">
+        <span class="command-name">/stats</span>
+        <span class="command-desc">Affichez vos statistiques detaillees : KDA, headshot %, winrate, et plus encore.</span>
+      </div>
+      <div class="command-item">
+        <span class="command-name">/rank</span>
+        <span class="command-desc">Consultez votre rang actuel et votre progression en RR sur la saison.</span>
+      </div>
+      <div class="command-item">
+        <span class="command-name">/match</span>
+        <span class="command-desc">Visualisez le detail de vos dernieres parties avec les performances par round.</span>
+      </div>
+      <div class="command-item">
+        <span class="command-name">/leaderboard</span>
+        <span class="command-desc">Affichez le classement des joueurs de votre serveur Discord.</span>
+      </div>
+      <div class="command-item">
+        <span class="command-name">/optout</span>
+        <span class="command-desc">Supprimez toutes vos donnees et deliez votre compte Riot en un clic.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="container">
+    <div class="section-header">
+      <h2>Comment ca marche</h2>
+      <p>Trois etapes simples pour commencer a suivre vos stats.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Ajoutez le bot</h3>
+        <p>Invitez No One Can Hide sur votre serveur Discord en un clic.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Liez votre compte</h3>
+        <p>Utilisez /link pour connecter votre compte Riot via l'authentification RSO officielle.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Consultez vos stats</h3>
+        <p>Utilisez les commandes slash pour acceder a toutes vos statistiques VALORANT.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section id="compliance" class="compliance-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Conformite avec les politiques Riot Games</h2>
+        <p>No One Can Hide est concu dans le strict respect des conditions d'utilisation de l'API Riot Games.</p>
+      </div>
+      <div class="compliance-grid">
+        <div class="compliance-card">
+          <h3>&#9989; Utilisation de l'API</h3>
+          <ul>
+            <li>Utilisation exclusive de l'API officielle Riot Games</li>
+            <li>Authentification via Riot Sign-On (RSO)</li>
+            <li>Respect des rate limits imposes par Riot</li>
+            <li>Aucun scraping ni acces non autorise</li>
+          </ul>
+        </div>
+        <div class="compliance-card">
+          <h3>&#128737; Protection des donnees</h3>
+          <ul>
+            <li>Collecte minimale de donnees (uniquement les stats de jeu)</li>
+            <li>Aucune revente de donnees a des tiers</li>
+            <li>Suppression des donnees sur demande (/optout)</li>
+            <li>Politique de confidentialite transparente</li>
+          </ul>
+        </div>
+        <div class="compliance-card">
+          <h3>&#9878; Mentions legales</h3>
+          <ul>
+            <li>No One Can Hide n'est pas approuve par Riot Games</li>
+            <li>VALORANT est une marque deposee de Riot Games, Inc.</li>
+            <li>Conditions d'utilisation et politique de confidentialite disponibles</li>
+            <li>Contact : colinduf45@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Pret a suivre vos performances ?</h2>
+    <p>Ajoutez No One Can Hide a votre serveur Discord et commencez a tracker vos stats VALORANT des maintenant.</p>
+    <a href="#" class="btn btn-primary">Ajouter a Discord</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="legal/index.html">Mentions legales</a>
+      <a href="legal/index.html#privacy">Confidentialite</a>
+      <a href="legal/index.html#tos">Conditions d'utilisation</a>
+      <a href="mailto:colinduf45@gmail.com">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 No One Can Hide. Non affilie a Riot Games. VALORANT est une marque de Riot Games, Inc.</p>
+  </footer>
+
+</body>
+</html>
